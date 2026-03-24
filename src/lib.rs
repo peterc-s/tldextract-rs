@@ -187,7 +187,7 @@ impl TldExtractor {
                 .or_else(|| self.tld_cache.get(&wildcard_piece))
                 .is_some()
             {
-                let subdomain_idx = if self.tld_cache.get(&exception_piece).is_some() {
+                let subdomain_idx = if self.tld_cache.contains(&exception_piece) {
                     suffix = Some(wildcard_piece[2..].to_string());
                     domain = Some(segs[i].to_string());
                     i
