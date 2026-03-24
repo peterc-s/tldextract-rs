@@ -8,7 +8,7 @@ license = "MIT"
 name = "tldextract"
 readme = "README.md"
 repository = "https://github.com/dovahcrow/tldextract-rs"
-version = "0.6.0"
+version = "0.6.1"
 
 [dependencies]
 idna = "1.1.0"
