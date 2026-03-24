@@ -349,7 +349,6 @@ fn whole_url_is_a_suffix() {
     );
 }
 
-
 #[test]
 fn wildcards() {
     let ext = TldOption::default().build();
